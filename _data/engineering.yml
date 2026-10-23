@@ -37,7 +37,7 @@
 
 - title: "Inside AdZoic: the architecture behind millions of ad decisions a day"
   url: https://www.adzoic.com/blog-inside-adzoic-architecture.html
-  image: https://www.adzoic.com/assets/blog/cover-inside-adzoic.png
+  image: https://www.adzoic.com/assets/blog/cover-inside-adzoic.svg
   date: Aug 2026
   read: 8 min read
   description: "The stack, system design, security posture and scaling approach behind a real-time bidder handling close to ten million ad requests a day."
