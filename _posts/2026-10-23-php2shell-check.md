@@ -2,6 +2,7 @@
 title: "PHP2Shell: find every vulnerable PHP install in one command"
 description: "We built php2shell-check, a free single-binary scanner that finds every PHP runtime on a server or container image, tells you if it is exposed to PHP2Shell, and what to do next."
 image: /assets/img/php2shell-card.png
+canonical_url: https://www.adzoic.com/blog-php2shell-check.html
 tags: [PHP, CVE-2026-109618, CVE-2026-109619, Open source]
 ---
 
