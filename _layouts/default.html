@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  {% feed_meta %}
+  <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <img class="logo-light" src="{{ '/assets/brand/adzoic-logo.svg' | relative_url }}" alt="AdZoic">
+        <img class="logo-dark" src="{{ '/assets/brand/adzoic-logo-white.svg' | relative_url }}" alt="AdZoic">
+      </a>
+      <nav>
+        <a href="{{ '/' | relative_url }}">Blog</a>
+        <a href="{{ site.github }}">GitHub</a>
+        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© {{ site.time | date: '%Y' }} {{ site.author }}</span>
+      <span>Open source on <a href="{{ site.github }}">GitHub</a></span>
+    </div>
+  </footer>
+</body>
+</html>

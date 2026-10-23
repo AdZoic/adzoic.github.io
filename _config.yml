@@ -1,0 +1,26 @@
+title: AdZoic
+description: Open-source security tooling and write-ups from the AdZoic team.
+url: https://adzoic.github.io
+baseurl: ""
+author: AdZoic Team
+github: https://github.com/AdZoic
+
+permalink: /blog/:year/:month/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+feed:
+  path: feed.xml
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+
+exclude: [README.md, Gemfile, Gemfile.lock, preview]

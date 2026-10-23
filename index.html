@@ -1,0 +1,23 @@
+---
+layout: default
+title: AdZoic
+---
+<section class="hero">
+  <h1>Security tooling you can actually run.</h1>
+  <p>Small, dependency-free tools and plain-language write-ups for the vulnerabilities that matter this week. Built in the open by the AdZoic team.</p>
+</section>
+
+<section class="posts">
+  <h2 class="section-title">Latest posts</h2>
+  {% for post in site.posts %}
+  <a class="card" href="{{ post.url | relative_url }}">
+    {% if post.image %}<img src="{{ post.image | relative_url }}" alt="" loading="lazy">{% endif %}
+    <div class="card-body">
+      <p class="meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></p>
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.description | default: post.excerpt | strip_html | truncate: 180 }}</p>
+      <span class="more">Read post →</span>
+    </div>
+  </a>
+  {% endfor %}
+</section>
