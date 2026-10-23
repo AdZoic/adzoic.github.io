@@ -21,3 +21,20 @@ title: AdZoic
   </a>
   {% endfor %}
 </section>
+
+<section class="posts">
+  <h2 class="section-title">Engineering at AdZoic</h2>
+  <p class="section-note">How we build and run our ad platform. These posts live on <a href="https://www.adzoic.com/blog.html">adzoic.com</a>.</p>
+  <div class="grid">
+    {% for post in site.data.engineering %}
+    <a class="card card--small" href="{{ post.url }}">
+      <img src="{{ post.image }}" alt="" loading="lazy">
+      <div class="card-body">
+        <p class="meta">{{ post.date }} · {{ post.read }} · <span class="external">adzoic.com ↗</span></p>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.description }}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>

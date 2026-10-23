@@ -75,6 +75,15 @@ img { max-width: 100%; height: auto; }
 
 .meta { color: var(--muted); font-size: 14px; margin: 0; }
 
+.section-note { color: var(--muted); margin: -8px 0 20px; font-size: 15px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+.grid .card { margin-bottom: 0; display: flex; flex-direction: column; }
+.card--small img { aspect-ratio: 1200 / 630; object-fit: cover; }
+.card--small .card-body { padding: 16px 18px 20px; }
+.card--small h3 { font-size: 18px; }
+.card--small p { font-size: 15px; }
+.external { color: var(--accent); font-weight: 600; }
+
 .post-header { padding: 48px 0 8px; }
 .post-header h1 { font-size: clamp(28px, 5.5vw, 40px); line-height: 1.2; letter-spacing: -0.02em; margin: 8px 0 12px; }
 .lede { font-size: 20px; color: var(--muted); margin: 0 0 16px; }
